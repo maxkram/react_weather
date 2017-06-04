@@ -1,13 +1,13 @@
 var React = require('react');
 
-var About = React.createClass({
+var Examples = React.createClass({
   render: function(){
     return (
       <h3>
-        About component
+        Examples component
       </h3>
     )
   }
 });
 
-module.exports = About;
+module.exports = Examples;
