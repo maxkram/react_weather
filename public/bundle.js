@@ -25431,23 +25431,19 @@
 	var React = __webpack_require__(1);
 	var Nav = __webpack_require__(223);
 
-	var Main = React.createClass({
-	  displayName: 'Main',
-
-	  render: function render() {
-	    return React.createElement(
-	      'div',
+	var Main = function Main(props) {
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(Nav, null),
+	    React.createElement(
+	      'h2',
 	      null,
-	      React.createElement(Nav, null),
-	      React.createElement(
-	        'h2',
-	        null,
-	        '\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
-	      ),
-	      this.props.children
-	    );
-	  }
-	});
+	      '\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
+	    ),
+	    props.children
+	  );
+	};
 
 	module.exports = Main;
 
@@ -25463,41 +25459,32 @@
 	    Link = _require.Link,
 	    IndexLink = _require.IndexLink;
 
-	var Nav = React.createClass({
-	  displayName: 'Nav',
-
-	  render: function render() {
-	    return React.createElement(
-	      'div',
+	var Nav = function Nav() {
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(
+	      'h2',
 	      null,
-	      React.createElement(
-	        'h2',
-	        null,
-	        '\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
-	      ),
-	      React.createElement(
-	        IndexLink,
-	        { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        '\u0423\u0437\u043D\u0430\u0442\u044C \u043E \u043F\u043E\u0433\u043E\u0434\u0435'
-	      ),
-	      React.createElement(
-	        Link,
-	        { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        '\u041E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435'
-	      ),
-	      React.createElement(
-	        Link,
-	        { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        '\u041F\u0440\u0438\u043C\u0435\u0440\u044B'
-	      ),
-	      React.createElement(
-	        'a',
-	        { href: '#/about' },
-	        '\u0412 \u0440\u0430\u0437\u0434\u0435\u043B "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435"'
-	      )
-	    );
-	  }
-	});
+	      '\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
+	    ),
+	    React.createElement(
+	      IndexLink,
+	      { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	      '\u0423\u0437\u043D\u0430\u0442\u044C \u043E \u043F\u043E\u0433\u043E\u0434\u0435'
+	    ),
+	    React.createElement(
+	      Link,
+	      { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	      '\u041E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435'
+	    ),
+	    React.createElement(
+	      Link,
+	      { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	      '\u041F\u0440\u0438\u043C\u0435\u0440\u044B'
+	    )
+	  );
+	};
 
 	module.exports = Nav;
 
@@ -25618,25 +25605,20 @@
 
 	var React = __webpack_require__(1);
 
-	var WeatherMessage = React.createClass({
-	  displayName: 'WeatherMessage',
+	var WeatherMessage = function WeatherMessage(_ref) {
+	  var temp = _ref.temp,
+	      location = _ref.location;
 
-	  render: function render() {
-	    var _props = this.props,
-	        temp = _props.temp,
-	        location = _props.location;
-
-	    return React.createElement(
-	      'h3',
-	      null,
-	      '\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u0432 \u0433. ',
-	      location,
-	      ' ',
-	      temp,
-	      ' \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432 \u0432 \u0442\u0435\u043D\u0438'
-	    );
-	  }
-	});
+	  return React.createElement(
+	    'h3',
+	    null,
+	    '\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u0432 \u0433. ',
+	    location,
+	    ' ',
+	    temp,
+	    ' \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432 \u0432 \u0442\u0435\u043D\u0438'
+	  );
+	};
 
 	module.exports = WeatherMessage;
 
@@ -27204,17 +27186,22 @@
 
 	var React = __webpack_require__(1);
 
-	var About = React.createClass({
-	  displayName: 'About',
-
-	  render: function render() {
+	var About = function About(props) {
 	    return React.createElement(
-	      'h3',
-	      null,
-	      '\u041E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435'
+	        'div',
+	        null,
+	        React.createElement(
+	            'h3',
+	            null,
+	            '\u041E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            '\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435 \u043E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435'
+	        )
 	    );
-	  }
-	});
+	};
 
 	module.exports = About;
 
