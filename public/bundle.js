@@ -25439,7 +25439,7 @@
 	    React.createElement(
 	      'h2',
 	      null,
-	      '\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
+	      '\u0413\u043B\u0430\u0432\u043D\u0430\u044F'
 	    ),
 	    props.children
 	  );
@@ -25466,7 +25466,7 @@
 	    React.createElement(
 	      'h2',
 	      null,
-	      '\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
+	      '\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044F'
 	    ),
 	    React.createElement(
 	      IndexLink,
