@@ -25442,7 +25442,7 @@
 	      React.createElement(
 	        'h2',
 	        null,
-	        'Main Component'
+	        '\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
 	      ),
 	      this.props.children
 	    );
@@ -25478,17 +25478,17 @@
 	      React.createElement(
 	        IndexLink,
 	        { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        'Get Weather'
+	        '\u0423\u0437\u043D\u0430\u0442\u044C \u043E \u043F\u043E\u0433\u043E\u0434\u0435'
 	      ),
 	      React.createElement(
 	        Link,
 	        { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        'About'
+	        '\u041E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435'
 	      ),
 	      React.createElement(
 	        Link,
 	        { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	        'Examples'
+	        '\u041F\u0440\u0438\u043C\u0435\u0440\u044B'
 	      ),
 	      React.createElement(
 	        'a',
@@ -25548,7 +25548,7 @@
 	        return React.createElement(
 	          'h3',
 	          null,
-	          'Fetching weather...'
+	          '\u0410\u043B\u043B\u043E, \u043C\u0435\u0442\u0435\u043E\u0446\u0435\u043D\u0442\u0440...'
 	        );
 	      } else if (temp && location) {
 	        return React.createElement(WeatherMessage, { temp: temp, location: location });
@@ -25561,7 +25561,7 @@
 	      React.createElement(
 	        'h3',
 	        null,
-	        'Weather Component'
+	        '\u041F\u043E\u0433\u043E\u0434\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
@@ -27211,7 +27211,7 @@
 	    return React.createElement(
 	      'h3',
 	      null,
-	      'About component'
+	      '\u041E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0435'
 	    );
 	  }
 	});
@@ -27233,7 +27233,7 @@
 	    return React.createElement(
 	      'h3',
 	      null,
-	      'Examples component'
+	      '\u041C\u043E\u0434\u0443\u043B\u044C \u043F\u0440\u0438\u043C\u0435\u0440\u0430'
 	    );
 	  }
 	});
