@@ -25473,7 +25473,7 @@
 	      React.createElement(
 	        'h2',
 	        null,
-	        'Nav Component'
+	        '\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C'
 	      ),
 	      React.createElement(
 	        IndexLink,
@@ -25493,7 +25493,7 @@
 	      React.createElement(
 	        'a',
 	        { href: '#/about' },
-	        'Go to About'
+	        '\u0412 \u0440\u0430\u0437\u0434\u0435\u043B "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435"'
 	      )
 	    );
 	  }
@@ -27226,17 +27226,22 @@
 
 	var React = __webpack_require__(1);
 
-	var Examples = React.createClass({
-	  displayName: 'Examples',
-
-	  render: function render() {
-	    return React.createElement(
+	var Examples = function Examples(props) {
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(
 	      'h3',
 	      null,
-	      '\u041C\u043E\u0434\u0443\u043B\u044C \u043F\u0440\u0438\u043C\u0435\u0440\u0430'
-	    );
-	  }
-	});
+	      '\u041F\u0440\u0438\u043C\u0435\u0440\u044B'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '\u042D\u0442\u043E \u043F\u0440\u0438\u043C\u0435\u0440\u0447\u0438\u043A'
+	    )
+	  );
+	};
 
 	module.exports = Examples;
 
